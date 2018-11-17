@@ -1,0 +1,46 @@
+<div ng-controller="columnCtrl">
+	<div class="entry-section-2" style="border:none;">
+		<h2>{{'COLUMNS' | translate}}</h2>
+	</div>
+
+    <div class="entry-section-2" style="border:none;">
+        <label class="light-blue left rt"><strong>{{'DIAMETER' | translate}}</strong> <span class="light-gray"></span>: </label>
+        <div class="textbox-section left">
+            <input name="txtDiameter" type="number" class="textBox" id="txtDiameter" placeholder="" data-ng-model="diameter.v" ng-change="calc()" />
+            <select ng-model="diameter.unit" ng-change="calc()">
+                <option value="foot">{{'FOOT' | translate}}</option>
+                <option value="inch">{{'INCH' | translate}}</option>
+                <option value="yard">{{'YARD' | translate}}</option>
+                <option value="meter">{{'METER' | translate}}</option>
+                <option value="centimeter">{{'CENTIMETER' | translate}}</option>
+            </select>
+        </div>
+        <div class="note_class left "></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="entry-section-2" style="border:none;">
+        <label class="light-blue left rt"><strong>{{'DEPTH' | translate}}</strong> <span class="light-gray"></span>: </label>
+        <div class="textbox-section left">
+            <input name="txtHeight" type="number" class="textBox" id="txtHeight" placeholder="" data-ng-model="height.v" ng-change="calc()" />
+            <select ng-model="height.unit" ng-change="calc()">
+                <option value="foot">{{'FOOT' | translate}}</option>
+                <option value="inch">{{'INCH' | translate}}</option>
+                <option value="yard">{{'YARD' | translate}}</option>
+                <option value="meter">{{'METER' | translate}}</option>
+                <option value="centimeter">{{'CENTIMETER' | translate}}</option>
+            </select>
+        </div>
+        <div class="note_class left "></div>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="reportDiv">
+    <h2>{{'RESULT' | translate}}</h2>
+        {{volume/1728 | number: 2}} {{'FEET3' | translate}} <br />
+        {{volume/46656 | number: 2}} {{'YARD3' | translate}} <br />
+        {{volume/61023.744095 | number: 2}} {{'METER3' | translate}}
+    </div>
+
+
+</div>

@@ -1,0 +1,6 @@
+name: Mortgage Calculator Module
+description: Calculate mortgage loan.
+package: Custom
+
+type: module
+core: 8.x

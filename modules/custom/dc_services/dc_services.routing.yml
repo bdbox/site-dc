@@ -1,0 +1,15 @@
+dc_services.content:
+  path: '/dc_services'
+  defaults:
+    _controller: '\Drupal\dc_services\Controller\DCServicesController::content'
+    _title: 'DC Services'
+  requirements:
+    _permission: 'access content'
+
+dc_services.mortgage_calculate:
+  path: '/dc_services/mortgage-calculate'
+  defaults:
+    _form: '\Drupal\custom\mortgage_calculator\MortgageForm.php'
+    _title: 'Mortgage Calculator'
+  requirements:
+    _permission: 'access content'

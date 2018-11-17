@@ -1,0 +1,61 @@
+<div ng-controller="tubeCtrl">
+<div class="entry-section-2" style="border:none;">
+		<h2>{{'TUBES' | translate}}</h2>
+	</div>
+
+    <div class="entry-section-2" style="border:none;">
+        <label class="light-blue left rt"><strong>{{'OUTERDIAMETER' | translate}}</strong> <span class="light-gray"></span>: </label>
+        <div class="textbox-section left">
+            <input name="txtOuterDiameter" type="number" class="textBox" id="txtOuterDiameter" placeholder="" data-ng-model="outerDiameter.v" ng-change="calc()" />
+            <select ng-model="outerDiameter.unit" ng-change="calc()">
+                <option value="foot">{{'FOOT' | translate}}</option>
+                <option value="inch">{{'INCH' | translate}}</option>
+                <option value="yard">{{'YARD' | translate}}</option>
+                <option value="meter">{{'METER' | translate}}</option>
+                <option value="centimeter">{{'CENTIMETER' | translate}}</option>
+            </select>
+        </div>
+        <div class="note_class left "></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="entry-section-2" style="border:none;">
+        <label class="light-blue left rt"><strong>{{'INNERDIAMETER' | translate}}</strong> <span class="light-gray"></span>: </label>
+        <div class="textbox-section left">
+            <input name="txtInnerDiameter" type="number" class="textBox" id="txtInnerDiameter" placeholder="" data-ng-model="innerDiameter.v" ng-change="calc()" />
+            <select ng-model="innerDiameter.unit" ng-change="calc()"> 
+                <option value="foot">{{'FOOT' | translate}}</option>
+                <option value="inch">{{'INCH' | translate}}</option>
+                <option value="yard">{{'YARD' | translate}}</option>
+                <option value="meter">{{'METER' | translate}}</option>
+                <option value="centimeter">{{'CENTIMETER' | translate}}</option>
+            </select>
+        </div>
+        <div class="note_class left "></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="entry-section-2" style="border:none;">
+        <label class="light-blue left rt"><strong>{{'HEIGHT' | translate}}</strong> <span class="light-gray"></span>: </label>
+        <div class="textbox-section left">
+            <input name="txtLength" type="number" class="textBox" id="txtLength" placeholder="" data-ng-model="length.v" ng-change="calc()" />
+            <select ng-model="length.unit" ng-change="calc()">
+                <option value="foot">{{'FOOT' | translate}}</option>
+                <option value="inch">{{'INCH' | translate}}</option>
+                <option value="yard">{{'YARD' | translate}}</option>
+                <option value="meter">{{'METER' | translate}}</option>
+                <option value="centimeter">{{'CENTIMETER' | translate}}</option>
+            </select>
+        </div>
+        <div class="note_class left "></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="reportDiv">
+    <h2>{{'RESULT' | translate}}</h2>
+        {{volume/1728 | number: 2}} {{'FEET3' | translate}} <br />
+        {{volume/46656 | number: 2}} {{'YARD3' | translate}} <br />
+        {{volume/61023.744095 | number: 2}} {{'METER3' | translate}}
+    </div>
+
+</div>

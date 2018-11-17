@@ -1,0 +1,61 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+#calculateBtn, #calculateBtn2 {
+	height:31px;
+	width:160px;	
+	margin-top:5px;
+	border:none;
+	cursor: pointer;
+	}
+	
+#calculateBtn{
+	background:url(../images/calculate-btn.png) 0 0 no-repeat;
+}
+
+#calculateBtn2{
+	background:url(../images/compare-btn.png) 0 0 no-repeat;
+}
+#calculateBtn:hover,
+#calculateBtn2:hover{
+	background-position:0 -31px;
+}
+
+.hide {
+	display: none;
+}
+
+.genderTabs span.on {
+    background-color: #1C94C4;
+    color: #ffffff;
+}
+
+.genderTabs span.female {
+    background: url(/themes/nutley/images/sprites.png) 10px 1px no-repeat #ddd;
+}
+.genderTabs span.male {
+    background: url(/themes/nutley/images/sprites.png) 10px -49px no-repeat #ddd;
+}
+.genderTabs span {
+    display: inline-block;
+    max-width: 80px;
+    text-align: center;
+    padding: 5px 10px 4px 33px;
+    margin-right: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    color: #aaa;
+    cursor: pointer;
+}
+.genderTabs span.on {
+    background-color: #1C94C4;
+    color: #ffffff;
+}

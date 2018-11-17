@@ -1,0 +1,21 @@
+global-styling:
+  css:
+    theme:
+      css/custom-style.css: {}
+
+  js:
+    js/superfish.js: {}
+  dependencies:
+    - core/jquery
+    
+
+yui:
+  version: "1"
+  js:
+    js/yui-min.js: {}
+    
+unit-conversion:
+  js:
+    js/unit-conversion/custom.js: {}
+  dependencies:
+    - nutley/yui
