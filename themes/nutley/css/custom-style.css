@@ -59,3 +59,65 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     background-color: #1C94C4;
     color: #ffffff;
 }
+
+.field--name-field-tags a {
+    display: inline-block;
+    background: url(/themes/nutley/images/tag.png) left center no-repeat;
+    padding: 0.3em 0.6em 0.3em 1.8em;
+    color: #6c6c6c;
+    text-shadow: 1px 1px #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    background-size: cover;
+	border: none;
+}
+
+.gotoLink {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 6px;
+}
+
+.gotoLink a:visited, .gotoLink a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.gotoLink a {
+    display: inline-block;
+    padding: 3px 8px;
+    background: #1C94C4;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 6px 6px 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    margin: 0 0 1.4615em;
+    padding: 1.5385em;
+}
+
+.helpBox {
+    border: 1px solid #fff;
+    background: #e5e5e5;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 5px 10px 15px 20px;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+.panel2 {
+    border: 1px solid #fff;
+    margin: 3px 0 10px 0;
+    background: url(/themes/nutley/images/pw_maze_white/tiny_grid_2.png) 15px -13px repeat-x #e5e5e5;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 5px 10px 20px 10px;
+    position: relative;
+}
