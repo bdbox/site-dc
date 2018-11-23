@@ -1,6 +1,0 @@
-name: daily calculators services Module
-description: Daily calculators services
-package: Custom
-
-type: module
-core: 8.x

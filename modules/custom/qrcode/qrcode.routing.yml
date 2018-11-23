@@ -1,0 +1,29 @@
+# Test API endpoints
+
+qrcode.get:
+  path: 'qrcode/get.json'
+  defaults: { _controller: '\Drupal\qrcode\Controller\QRcodeController::get_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+qrcode.put:
+  path: 'qrcode/put.json'
+  defaults: { _controller: '\Drupal\qrcode\Controller\QRcodeController::put_example' }
+  methods:  [PUT]
+  requirements:
+    _access: 'TRUE'
+
+qrcode.post:
+  path: 'qrcode/post.json'
+  defaults: { _controller: '\Drupal\qrcode\Controller\QRcodeController::post_example' }
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+qrcode.delete:
+  path: 'qrcode/delete.json'
+  defaults: { _controller: '\Drupal\qrcode\Controller\QRcodeController::delete_example' }
+  methods:  [DELETE]
+  requirements:
+    _access: 'TRUE'

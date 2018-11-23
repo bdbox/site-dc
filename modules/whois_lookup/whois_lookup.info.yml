@@ -1,0 +1,6 @@
+name: whois_lookup
+description: Check domain name's information
+package: custom
+
+type: module
+core: 8.x

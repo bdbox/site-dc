@@ -1,0 +1,8 @@
+# Test API endpoints
+
+mortgage_calculator.get:
+  path: 'mortgage-calc/get.json'
+  defaults: { _controller: 'Drupal\mortgage_calculator\Controller\MortgageController::get_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

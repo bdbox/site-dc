@@ -29,8 +29,8 @@ var dataString_1;
                 var dataString = 'price=' + price + '&down=' + down + '&length=' + length + '&rate=' + rate;
                 //alert (dataString);return false;
                 $.ajax({
-                    type: "POST",
-                    url: "/modules/custom/dc-services/mortgage-calculator/mortgage-calculator.php",
+                    type: "GET",
+                    url: "/mortgage-calc/get.json",
                     data: dataString,
                     success: function (response) {
                         $('#result_panel').html(response);
@@ -49,8 +49,8 @@ var dataString_1;
             var dataString_1 = 'price=' + price + '&down=' + down + '&length=' + length + '&rate=' + rate + '&price_1=' + price_1 + '&down_1=' + down_1 + '&length_1=' + length_1 + '&rate_1=' + rate_1;
             //alert (dataString_1);return false;
             $.ajax({
-                type: "POST",
-                url: "/modules/custom/dc-services/mortgage-calculator/mortgage-calculator2.php",
+                type: "GET",
+                url: "/mortgage-calc/get.json",
                 data: dataString_1,
                 success: function (response) {
                     $('#result_panel').html(response);

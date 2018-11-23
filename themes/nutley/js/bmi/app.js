@@ -376,7 +376,7 @@ app.controller('bmiCtrl', ["$scope", function($scope){
 		url += $scope.country;
 		
 		rt += encodeURIComponent(url);
-		$(".shareUrl textarea").html(rt);
+		jQuery(".shareUrl textarea").html(rt);
 	}
 
 

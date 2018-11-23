@@ -1,0 +1,5 @@
+name: page rank checker
+type: module
+description: check pagerank
+author: hh
+core: 8.x

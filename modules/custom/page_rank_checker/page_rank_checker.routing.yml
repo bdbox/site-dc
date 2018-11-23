@@ -1,0 +1,8 @@
+# Test API endpoints
+
+page_rank_checker.get:
+  path: 'page-rank-api/get.json'
+  defaults: { _controller: 'Drupal\page_rank_checker\Controller\PageRankController::get_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

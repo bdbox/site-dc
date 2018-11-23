@@ -5,17 +5,17 @@ function c_color($f_name,$t_rgb){
 	list($src_w,$src_h,$src_type) = getimagesize($img_file);
 
 	$im = ImageCreateFromPng($img_file);
-	
+
 	$t_rgb = explode(',',$t_rgb);
 
 	$t_color = imagecolorallocate($im,$t_rgb[0],$t_rgb[1],$t_rgb[2]);
 
 	for($x = 0; $x < $src_w; $x++){
 		for($y = 0; $y < $src_h; $y++){
-			$rgb = ImageColorAt($im, $x, $y);		
+			$rgb = ImageColorAt($im, $x, $y);
 			if($rgb == 1){
 				imagesetpixel ($im,$x,$y,$t_color);
-			}			
+			}
 		}
 	}
 	imagepng($im,$f_name);
@@ -42,5 +42,5 @@ if($qr_color != '0,0,0'){
 	c_color($filename,$qr_color);
 }
 
-echo '<img src="/sites/all/modules/custom/qrcode/',$filename,'">';
+echo '<img src="/modules/custom/qrcode/',$filename,'">';
 ?>

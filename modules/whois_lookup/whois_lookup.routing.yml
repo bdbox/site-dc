@@ -1,0 +1,29 @@
+# Test API endpoints
+
+whois_lookup.get:
+  path: 'whois-api/get.json'
+  defaults: { _controller: '\Drupal\whois_lookup\Controller\WhoisLookupAPIController::get_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+whois_lookup.put:
+  path: 'whois-api/put.json'
+  defaults: { _controller: '\Drupal\whois_lookup\Controller\WhoisLookupAPIController::put_example' }
+  methods:  [PUT]
+  requirements:
+    _access: 'TRUE'
+
+whois_lookup.post:
+  path: 'whois-api/post.json'
+  defaults: { _controller: '\Drupal\whois_lookup\Controller\WhoisLookupAPIController::post_example' }
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+whois_lookup.delete:
+  path: 'whois-api/delete.json'
+  defaults: { _controller: '\Drupal\whois_lookup\Controller\WhoisLookupAPIController::delete_example' }
+  methods:  [DELETE]
+  requirements:
+    _access: 'TRUE'
